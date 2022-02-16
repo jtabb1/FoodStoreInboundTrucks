@@ -13,6 +13,8 @@ Models:
     dTmodified : 
     dTassayed : 
 
+* OnPropertyHistory
+
 * FreightDetails
     ownLoadId :  (key)
     apptId :  (foreign key)

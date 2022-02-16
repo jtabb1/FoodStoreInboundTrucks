@@ -2,8 +2,8 @@ Models:
 
 * OnPropertyAssay
     locId :  (key)
-    loadId : 
-    apptId : 
+    ownLoadId :  (foreign key)
+    apptId :  (foreign key)
     tOwner : 
     tCode : 
     dwellingTime : 
@@ -14,7 +14,8 @@ Models:
     dTassayed : 
 
 * FreightDetails
-    loadId :  (key)
+    ownLoadId :  (key)
+    apptId :  (foreign key)
     loadType : <palletized, floorload, or mixed>
     numProduceItems : 
     numCannedItems : 
@@ -26,5 +27,48 @@ Models:
     dTcreated : 
     dTmodified : 
 
+* TripDetails
+    ownLoadId :  (key)
+    apptId :  (foreign key)
+    source : 
+    destination : 
+    purpose : 
+    scheduled_departure : 
+    actual_departure : 
+    scheduled_arrival : 
+    actual_arrival : 
+
+* InternalLoadLink
+    ownLoadId :  (key)
+    billOfLadingKey : 
+
+* PlacingPerishablesPerformance
+    ownLoadId:  (key)
+    purpose : 
+    OriginalNumItems : 
+    NumItemsLeft : 
+    ReasonNumItemsLeftIsNotZero : 
+    DateTimeDueDate : 
+    DateTimeCompleted : 
+    PlusHoursEarlyOrNegativeIfLate : 
+    ReasonLate : 
+    HowWillLatenessBeCorrected : 
+    dTDataCreated : 
+    dTDataModified : 
+    dTAnalysisCreated : 
+    dTAnalysisModified : 
+    dTassayed : 
+
 * FreightOfA3rdParty
     apptId :  (key)
+    loadType : <palletized, floorload, or mixed>
+    nameItems01 : 
+    numItems01 : 
+    nameItems02 : 
+    numItems02 : 
+    nameItems03 : 
+    numItems03 : 
+    namesAndNumsOfOtherItems : 
+    numItemsTotal : 
+    dTcreated : 
+    dTmodified : 

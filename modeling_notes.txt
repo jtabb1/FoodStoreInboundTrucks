@@ -1,0 +1,30 @@
+Models:
+
+* OnPropertyAssay
+    locId :  (key)
+    loadId : 
+    apptId : 
+    tOwner : 
+    tCode : 
+    dwellingTime : 
+    direction : 
+    purpose : 
+    notes : 
+    dTmodified : 
+    dTassayed : 
+
+* FreightDetails
+    loadId :  (key)
+    loadType : <palletized, floorload, or mixed>
+    numProduceItems : 
+    numCannedItems : 
+    numJarItems : 
+    numBoxItems : 
+    numOtherItems : 
+    numShelfReadyItems : 
+    numItemsTotal : 
+    dTcreated : 
+    dTmodified : 
+
+* FreightOfA3rdParty
+    apptId :  (key)

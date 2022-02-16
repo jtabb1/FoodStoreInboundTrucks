@@ -41,6 +41,9 @@ Models:
 * InternalLoadLink
     ownLoadId :  (key)
     billOfLadingKey : 
+    dTcreated : 
+    dTmodified : 
+
 
 * PlacingPerishablesPerformance
     ownLoadId:  (key)
@@ -57,6 +60,8 @@ Models:
     dTDataModified : 
     dTAnalysisCreated : 
     dTAnalysisModified : 
+    dTcreated : 
+    dTmodified : 
     dTassayed : 
 
 * FreightOfA3rdParty

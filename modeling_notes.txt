@@ -37,13 +37,14 @@ Models:
     actual_departure : 
     scheduled_arrival : 
     actual_arrival : 
+    dTcreated : 
+    dTmodified : 
 
 * InternalLoadLink
     ownLoadId :  (key)
     billOfLadingKey : 
     dTcreated : 
     dTmodified : 
-
 
 * PlacingPerishablesPerformance
     ownLoadId:  (key)

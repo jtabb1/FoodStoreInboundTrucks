@@ -1,6 +1,6 @@
 Models:
 
-* OnPropertyAssay
+* OnPropertyNowAssay
     locId :  (key)
     ownLoadId :  (foreign key)
     apptId :  (foreign key)
@@ -14,6 +14,11 @@ Models:
     dTassayed : 
 
 * OnPropertyHistory
+    id :  (key)
+    ownLoadId :  (foreign key)
+    locId :  (foreign key)
+    ownLoadId_locId : 
+    dTassayed : 
 
 * FreightDetails
     ownLoadId :  (key)
